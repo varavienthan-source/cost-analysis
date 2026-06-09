@@ -377,11 +377,11 @@
       <div class="inputs">
         <div class="in">
           <label>Your PSW/HCA wage <small>per hour</small></label>
-          <div class="ifield"><span>$</span><input id="bWage" type="number" step="0.01" value="30"></div>
+          <div class="ifield"><span>$</span><input id="bWage" type="number" step="0.01" value="35"></div>
         </div>
         <div class="in">
           <label>Priority 1:1 rate <small>all-in, per hour</small></label>
-          <div class="ifield"><span>$</span><input id="bRate" type="number" step="0.01" value="26.95"></div>
+          <div class="ifield"><span>$</span><input id="bRate" type="number" step="0.01" value="30"></div>
         </div>
         <div class="in">
           <label>1:1 hours <small>per month</small></label>
@@ -469,10 +469,10 @@ const BURDEN_ITEMS=[
 ];
 
 const RATE_DEFAULTS=[
-  {role:"PSW 1:1", current:30,  proposed:26.95, hours:200},
-  {role:"PSW",     current:35,  proposed:33.95, hours:200},
-  {role:"RPN",     current:59,  proposed:56.95, hours:200},
-  {role:"RN",      current:115, proposed:100,   hours:200},
+  {role:"PSW 1:1", current:35,  proposed:30,  hours:200},
+  {role:"PSW",     current:40,  proposed:35,  hours:200},
+  {role:"RPN",     current:70,  proposed:65,  hours:200},
+  {role:"RN",      current:115, proposed:100, hours:200},
 ];
 let rates = JSON.parse(JSON.stringify(RATE_DEFAULTS));
 let chartMode="12mo";
@@ -815,3 +815,4 @@ renderBurden();
 </script>
 </body>
 </html>
+           
